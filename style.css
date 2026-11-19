@@ -1,0 +1,266 @@
+* { box-sizing: border-box; }
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background: #d9dde2;
+    color: #2c3138;
+    font: 11px/1.5 Verdana, Tahoma, Geneva, sans-serif;
+}
+
+a { color: #2255aa; text-decoration: none; }
+a:hover { color: #b3450a; text-decoration: underline; }
+
+.uc-wrap {
+    width: 1000px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 8px;
+}
+
+.uc-top {
+    background: #eef1f5;
+    border-bottom: 1px solid #b9c1ca;
+}
+
+.uc-top .uc-wrap {
+    display: flex;
+    align-items: center;
+    height: 58px;
+}
+
+.uc-logo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: .3px;
+    text-transform: uppercase;
+    color: #22303c;
+    line-height: 1;
+}
+
+.uc-logo em {
+    font-style: normal;
+    color: #2b6f9e;
+}
+
+.uc-body {
+    background: #ffffff;
+    border: 1px solid #b9c1ca;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .12);
+    padding: 10px 10px 14px;
+}
+
+.tcat {
+    background: linear-gradient(#f2f6fa, #dde5ee);
+    border: 1px solid #b4bfcb;
+    border-top-color: #ffffff;
+    padding: 7px 9px;
+    color: #1b3b56;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: .3px;
+    text-shadow: 0 1px 0 #ffffff;
+}
+
+.tcat .right {
+    float: right;
+    font-weight: normal;
+    font-size: 10px;
+    color: #6d7c8b;
+    text-shadow: none;
+}
+
+.uc-bar {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 9px;
+    background: #f4f6f9;
+    border: 1px solid #c3ccd6;
+    border-top: 0;
+    border-bottom: 0;
+}
+
+.uc-bar .lbl { color: #56626f; font-size: 10px; margin-right: 2px; }
+
+.uc-input {
+    background: #ffffff;
+    border: 1px solid #adb8c4;
+    color: #2c3138;
+    font: 11px Verdana, Tahoma, sans-serif;
+    padding: 3px 5px;
+    outline: none;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .06);
+}
+
+.uc-input:focus {
+    border-color: #4f88bd;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .06), 0 0 0 2px rgba(79, 136, 189, .22);
+}
+
+.uc-input::placeholder { color: #98a3ae; }
+
+select.uc-input { padding: 2px 3px; cursor: pointer; }
+
+.uc-btn {
+    background: linear-gradient(#ffffff, #e3e9f0);
+    border: 1px solid #a7b3c0;
+    color: #2c3138;
+    font: 11px Verdana, Tahoma, sans-serif;
+    padding: 3px 12px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    text-shadow: 0 1px 0 #ffffff;
+    box-shadow: 0 1px 0 #ffffff inset;
+}
+
+.uc-btn:hover {
+    background: linear-gradient(#ffffff, #d3dce6);
+    border-color: #8d9aa8;
+    color: #1b3b56;
+    text-decoration: none;
+}
+
+.uc-btn.primary {
+    background: linear-gradient(#5d9ed6, #2f6ea8);
+    border-color: #245a8c;
+    color: #ffffff;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, .35);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .28);
+    font-weight: bold;
+}
+
+.uc-btn.primary:hover {
+    background: linear-gradient(#6fabe0, #3a7cb8);
+    color: #ffffff;
+}
+
+.uc-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #c3ccd6;
+    border-top: 0;
+}
+
+.uc-table thead th {
+    background: linear-gradient(#eef3f8, #dfe7f0);
+    border-bottom: 1px solid #b8c3cf;
+    border-right: 1px solid #cdd6df;
+    color: #40566b;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: left;
+    padding: 7px 9px;
+    text-transform: uppercase;
+    letter-spacing: .6px;
+    white-space: nowrap;
+    text-shadow: 0 1px 0 #ffffff;
+}
+
+.uc-table thead th:last-child { border-right: 0; }
+.uc-table thead th a { color: #40566b; text-decoration: none; }
+.uc-table thead th a:hover { color: #1b3b56; text-decoration: none; }
+
+.uc-table tbody td {
+    padding: 8px 9px;
+    border-bottom: 1px solid #e3e8ee;
+    border-right: 1px solid #eef1f5;
+    vertical-align: top;
+    font-size: 11px;
+    color: #2c3138;
+}
+
+.uc-table tbody td:last-child { border-right: 0; }
+.uc-table tbody tr:nth-child(odd) { background: #ffffff; }
+.uc-table tbody tr:nth-child(even) { background: #f6f8fb; }
+.uc-table tbody tr:hover { background: #e9f2fb; }
+
+.rowicon {
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    background: #eef1f5;
+    border: 1px solid #b6c1cd;
+    margin-right: 6px;
+    vertical-align: -1px;
+}
+
+.rowicon.on { background: #b8d9f2; border-color: #6fa5d2; }
+
+.uc-id { width: 84px; }
+.uc-id a { font-weight: bold; color: #2255aa; }
+.uc-name { width: 34%; }
+.uc-name a { font-weight: bold; font-size: 12px; color: #1a4f9c; }
+.uc-name a:hover { color: #b3450a; }
+.uc-victim { color: #4b5663; }
+.uc-vuln { width: 24%; }
+
+.vuln {
+    display: inline-block;
+    padding: 2px 6px;
+    border: 1px solid #c6cfd8;
+    background: #f2f5f8;
+    color: #55636f;
+    font-size: 9px;
+    text-transform: uppercase;
+    letter-spacing: .7px;
+    line-height: 1.35;
+}
+
+.vuln.crit { background: #fdeeee; border-color: #e2b3b3; color: #ad2b2b; }
+.vuln.med { background: #fdf6e8; border-color: #e5d2a4; color: #93630f; }
+.vuln.low { background: #eef7ef; border-color: #b7d6b9; color: #2c7440; }
+
+.uc-empty td {
+    padding: 28px 9px;
+    text-align: center;
+    color: #6d7c8b;
+    background: #f6f8fb;
+}
+
+.uc-legend {
+    width: 430px;
+    max-width: 100%;
+    margin: 14px auto 0;
+}
+
+.uc-box {
+    border: 1px solid #b4bfcb;
+    background: #ffffff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .08);
+}
+
+.uc-box .tcat { border: 0; border-bottom: 1px solid #b4bfcb; }
+
+.uc-box .body {
+    padding: 9px 10px;
+    font-size: 10px;
+    color: #4b5663;
+    line-height: 1.7;
+}
+
+.leg-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 4px 0;
+}
+
+.leg-row .vuln { min-width: 58px; text-align: center; }
+.leg-row span:last-child { color: #4b5663; }
+
+.uc-spacer {
+    height: 34px;
+}
+
+@media (max-width: 1020px) {
+    .uc-wrap { width: 100%; }
+    .uc-table { font-size: 10px; }
+    .uc-table thead th { font-size: 9px; padding: 5px 6px; }
+    .uc-table tbody td { padding: 6px; }
+    .uc-name a { font-size: 11px; }
+    .uc-vuln { width: auto; }
+    .uc-bar { flex-wrap: wrap; }
+}
